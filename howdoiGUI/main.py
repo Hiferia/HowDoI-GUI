@@ -12,14 +12,12 @@ class GUIWindow(QMainWindow):
         
         # Fonts
         self.fontForte = QFont('Forte', 10)
-        self.fontTimes = QFont('Times', 10)
         self.fontBox = QFontComboBox()
         self.fontBox.currentFontChanged.connect(self.onFontChange)
         
         # Title and window options
         self.setWindowTitle("HowDoI GUI")
         self.setMinimumSize(800, 600)
-        self.version = howdoi.__version__
        
         # Buttons 
         self.button = QPushButton("Ask")
